@@ -5,12 +5,8 @@ const HomepageHead = () => {
 
   return (
     <div className="main-container d-flex flex-column align-items-center">
-      <div
-        className="ali-choubin-ebaotrc-cnq-4-unsplash-1 d-flex flex-column align-items-center "
-        
-      >
-        <div className="rectangle-28"
-        >
+      <div className="ali-choubin-ebaotrc-cnq-4-unsplash-1 d-flex flex-column align-items-center ">
+        <div className="rectangle-28">
           <img src={Rectangle}></img>
           <div className="vector">
             <svg
@@ -41,34 +37,17 @@ const HomepageHead = () => {
             </div>
           </div>
         </div>
-        <div className="frame-1" onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}>
-          <div
-           className="anasayfa"
-          >
-            Anasayfa
-          </div>
+        <div
+          className="frame-1"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          <div className="anasayfa">Anasayfa</div>
 
-          <div
-           className="hakkmzda"
-          >
-            Hakkımızda
-          </div>
-          <div
-            className="rnlerimiz"
-          >
-            Ürünlerimiz
-          </div>
-          <div
-            className="fuarlar"
-          >
-            Fuarlar
-          </div>
-          <div
-            className="letiim"
-          >
-            İletişim
-          </div>
+          <div className="hakkmzda">Hakkımızda</div>
+          <div className="rnlerimiz">Ürünlerimiz</div>
+          <div className="fuarlar">Fuarlar</div>
+          <div className="letiim">İletişim</div>
 
           <div className="frame-3">
             <div className="tr-tr">TR-tr</div>
