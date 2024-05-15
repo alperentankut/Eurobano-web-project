@@ -39,8 +39,8 @@ const HomepageHead = () => {
         </div>
         <div
           className="frame-1"
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
+          onClick={() => setIsHovered(true)}
+          
         >
           <div className="anasayfa">Anasayfa</div>
 
