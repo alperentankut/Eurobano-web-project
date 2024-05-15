@@ -1,9 +1,16 @@
 import Rectangle from "../assets/Rectangle 28.png";
+import { useState } from "react";
 const HomepageHead = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <div className="main-container d-flex flex-column align-items-center">
-      <div className="ali-choubin-ebaotrc-cnq-4-unsplash-1 d-flex flex-column align-items-center ">
-        <div className="rectangle-28">
+      <div
+        className="ali-choubin-ebaotrc-cnq-4-unsplash-1 d-flex flex-column align-items-center "
+        
+      >
+        <div className="rectangle-28"
+        >
           <img src={Rectangle}></img>
           <div className="vector">
             <svg
@@ -34,125 +41,103 @@ const HomepageHead = () => {
             </div>
           </div>
         </div>
-        <div className="main-button d-flex justify-content-between align-items-center">
+        <div className="frame-1" onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}>
           <div
-            style={{
-              color: "white",
-              fontSize: 18,
-              fontFamily: "Avenir Next",
-              fontWeight: "400",
-              lineHeight: 28,
-              letterSpacing: 2.7,
-              wordWrap: "break-word",
-            }}
+           className="anasayfa"
           >
             Anasayfa
           </div>
 
           <div
-            style={{
-              color: "white",
-              fontSize: 18,
-              fontFamily: "Avenir Next",
-              fontWeight: "400",
-              lineHeight: 28,
-              letterSpacing: 2.7,
-              wordWrap: "break-word",
-            }}
+           className="hakkmzda"
           >
             Hakkımızda
           </div>
           <div
-            style={{
-              color: "white",
-              fontSize: 18,
-              fontFamily: "Avenir Next",
-              fontWeight: "400",
-              lineHeight: 28,
-              letterSpacing: 2.7,
-              wordWrap: "break-word",
-            }}
+            className="rnlerimiz"
           >
             Ürünlerimiz
           </div>
           <div
-            style={{
-              color: "white",
-              fontSize: 18,
-              fontFamily: "Avenir Next",
-              fontWeight: "400",
-              lineHeight: 28,
-              letterSpacing: 2.7,
-              wordWrap: "break-word",
-            }}
+            className="fuarlar"
           >
             Fuarlar
           </div>
           <div
-            style={{
-              color: "white",
-              fontSize: 18,
-              fontFamily: "Avenir Next",
-              fontWeight: "400",
-              lineHeight: 28,
-              letterSpacing: 2.7,
-              wordWrap: "break-word",
-            }}
+            className="letiim"
           >
             İletişim
           </div>
+
           <div className="frame-3">
             <div className="tr-tr">TR-tr</div>
-            <div style={{ width: 24, height: 24, position: "relative" }}>
-              <div className="arrow-down"></div>
+            <div>
+              <svg
+                className="arrow-down"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M5 8.5L12 15.5L19 8.5"
+                  stroke="#FFCD00"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                />
+              </svg>
             </div>
           </div>
         </div>
-        <div className="frame-4">
-          <svg
-            className="line-2-stroke"
-            xmlns="http://www.w3.org/2000/svg"
-            width="46"
-            height="2"
-            viewBox="0 0 46 2"
-            fill="none"
-          >
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M45.5476 1.09399H0V0.0939941H45.5476V1.09399Z"
-              fill="#FFCD00"
-            />
-          </svg>
-          <svg
-            className="vector-select"
-            xmlns="http://www.w3.org/2000/svg"
-            width="19"
-            height="7"
-            viewBox="0 0 19 7"
-            fill="none"
-          >
-            <path
-              d="M6.09764 4.62863C4.92881 4.62863 4.04568 5.49443 3.8985 6.59399H0.547852C0.894172 3.85806 2.95477 0.593994 6.24481 0.593994C7.37901 0.593994 8.72101 1.06153 9.9591 1.49443C11.1972 1.96196 12.3314 2.42083 13.0327 2.42083C14.0976 2.42083 14.9375 1.52906 15.0933 0.593994H18.4526C18.0284 3.6243 16.4699 6.2217 12.8249 6.2217C10.0976 6.2217 7.65608 4.62863 6.09764 4.62863Z"
-              fill="#FFCC07"
-            />
-          </svg>
-          <svg
-            className="line-3-stroke"
-            xmlns="http://www.w3.org/2000/svg"
-            width="46"
-            height="2"
-            viewBox="0 0 46 2"
-            fill="none"
-          >
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M45.9998 1.09399H0.452148V0.0939941H45.9998V1.09399Z"
-              fill="#FFCD00"
-            />
-          </svg>
-        </div>
+        {isHovered && (
+          <div className="frame-4">
+            <svg
+              className="line-2-stroke"
+              xmlns="http://www.w3.org/2000/svg"
+              width="46"
+              height="2"
+              viewBox="0 0 46 2"
+              fill="none"
+            >
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M45.5476 1.09399H0V0.0939941H45.5476V1.09399Z"
+                fill="#FFCD00"
+              />
+            </svg>
+            <svg
+              className="vector-select"
+              xmlns="http://www.w3.org/2000/svg"
+              width="19"
+              height="7"
+              viewBox="0 0 19 7"
+              fill="none"
+            >
+              <path
+                d="M6.09764 4.62863C4.92881 4.62863 4.04568 5.49443 3.8985 6.59399H0.547852C0.894172 3.85806 2.95477 0.593994 6.24481 0.593994C7.37901 0.593994 8.72101 1.06153 9.9591 1.49443C11.1972 1.96196 12.3314 2.42083 13.0327 2.42083C14.0976 2.42083 14.9375 1.52906 15.0933 0.593994H18.4526C18.0284 3.6243 16.4699 6.2217 12.8249 6.2217C10.0976 6.2217 7.65608 4.62863 6.09764 4.62863Z"
+                fill="#FFCC07"
+              />
+            </svg>
+            <svg
+              className="line-3-stroke"
+              xmlns="http://www.w3.org/2000/svg"
+              width="46"
+              height="2"
+              viewBox="0 0 46 2"
+              fill="none"
+            >
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M45.9998 1.09399H0.452148V0.0939941H45.9998V1.09399Z"
+                fill="#FFCD00"
+              />
+            </svg>
+          </div>
+        )}
       </div>
     </div>
   );
