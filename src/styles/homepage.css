@@ -1,4 +1,4 @@
-.main-home {
+.anasayfa-2 {
     width: 1920px;
     height: 6275px;
     overflow: hidden;
@@ -62,10 +62,7 @@
 
 
 
-.main-button {
-    width: 40%;
-    height: 5%;
-}
+
 
 .frame-4 {
     display: flex;
@@ -73,7 +70,7 @@
     justify-content: center;
     align-items: center;
     gap: 7px;
-    
+
     transition: opacity 0.3s ease;
     /* İsteğe bağlı: yumuşak bir geçiş ekler */
 }
@@ -127,7 +124,8 @@
     width: 24px;
     height: 24px;
 }
-.hakkmzda{
+
+.hakkmzda {
     color: var(--Used-Colors-Background-colors-Background-light, #FFF);
     font-family: "Avenir Next";
     font-size: 18px;
@@ -136,7 +134,8 @@
     line-height: 28px;
     letter-spacing: 2.7px;
 }
-.rnlerimiz{
+
+.rnlerimiz {
     color: var(--Used-Colors-Background-colors-Background-light, #FFF);
     font-family: "Avenir Next";
     font-size: 18px;
@@ -145,7 +144,8 @@
     line-height: 28px;
     letter-spacing: 2.7px;
 }
-.fuarlar{
+
+.fuarlar {
     color: var(--Used-Colors-Background-colors-Background-light, #FFF);
     font-family: "Avenir Next";
     font-size: 18px;
@@ -154,7 +154,8 @@
     line-height: 28px;
     letter-spacing: 2.7px;
 }
-.anasayfa{
+
+.anasayfa {
     color: var(--Used-Colors-Text-colors-Text-light, #FFF);
     font-family: "Avenir Next";
     font-size: 18px;
@@ -163,7 +164,8 @@
     line-height: 28px;
     letter-spacing: 2.7px;
 }
-.letiim{
+
+.letiim {
     color: var(--Used-Colors-Background-colors-Background-light, #FFF);
     font-family: "Avenir Next";
     font-size: 18px;
@@ -171,4 +173,23 @@
     font-weight: 400;
     line-height: 28px;
     letter-spacing: 2.7px;
+}
+.dlednzevn{
+    color: #FFF;
+    font-family: "Playfair Display";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 12px;
+    margin-top: 14%;
+}
+.vazgeemeyecenzdetayi{
+    color: #FFF;
+    font-family: "Playfair Display";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 12px;
 }

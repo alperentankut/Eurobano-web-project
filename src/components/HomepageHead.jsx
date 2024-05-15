@@ -5,7 +5,7 @@ const HomepageHead = () => {
 
   return (
     <div className="main-container d-flex flex-column align-items-center">
-      <div className="ali-choubin-ebaotrc-cnq-4-unsplash-1 d-flex flex-column align-items-center ">
+      <div className="ali-choubin-ebaotrc-cnq-4-unsplash-1 d-flex flex-column align-items-center">
         <div className="rectangle-28">
           <img src={Rectangle}></img>
           <div className="vector">
@@ -40,7 +40,7 @@ const HomepageHead = () => {
         <div
           className="frame-1"
           onClick={() => setIsHovered(true)}
-          
+         
         >
           <div className="anasayfa">Anasayfa</div>
 
@@ -117,6 +117,8 @@ const HomepageHead = () => {
             </svg>
           </div>
         )}
+        <div className="dlednzevn ">DÜŞLEDİĞİNİZ EVİN</div>
+        <div className="vazgeemeyecenzdetayi">VAZGEÇEMEYECEĞİNİZ DETAYI</div>
       </div>
     </div>
   );

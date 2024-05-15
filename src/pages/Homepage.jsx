@@ -3,7 +3,7 @@ import "../styles/homepage.css"
 
 const Homepage = () => {
   return (
-    <div className="main-home">
+    <div className="anasayfa-2">
       <HomepageHead/>
     </div>
   )
