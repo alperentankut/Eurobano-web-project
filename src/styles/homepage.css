@@ -1,7 +1,8 @@
 .anasayfa-2 {
-    width: 1920px;
+    width: 100vw;
     height: 6275px;
-    overflow: hidden;
+    overflow-x: hidden; /* Yatay kaydırmayı gizle */
+    overflow-y: auto;
     background: #161E29;
 }
 
@@ -15,11 +16,12 @@
 }
 
 .rectangle-28 {
-    width: 1740px;
+    width: 90vw;
     height: 130.702px;
     background: rgba(22, 30, 41, 0.50);
     flex-shrink: 0;
     backdrop-filter: blur(8.649999618530273px);
+
 }
 
 .vector {
@@ -51,12 +53,12 @@
 
 
 .ali-choubin-ebaotrc-cnq-4-unsplash-1 {
-    width: 1740px;
+    width: 90vw;
     height: 1030px;
     border-radius: 0px 0px 50px 50px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%), url("../assets/homePhoto.jpeg") lightgray 50% / cover no-repeat;
     flex-shrink: 0;
-    margin: auto;
+    
 }
 
 
@@ -133,6 +135,7 @@
     font-weight: 400;
     line-height: 28px;
     letter-spacing: 2.7px;
+    cursor: pointer;
 }
 
 .rnlerimiz {
@@ -143,6 +146,7 @@
     font-weight: 400;
     line-height: 28px;
     letter-spacing: 2.7px;
+    cursor: pointer;
 }
 
 .fuarlar {
@@ -153,6 +157,7 @@
     font-weight: 400;
     line-height: 28px;
     letter-spacing: 2.7px;
+    cursor: pointer;
 }
 
 .anasayfa {
@@ -163,6 +168,7 @@
     font-weight: 400;
     line-height: 28px;
     letter-spacing: 2.7px;
+    cursor: pointer;
 }
 
 .letiim {
@@ -173,6 +179,7 @@
     font-weight: 400;
     line-height: 28px;
     letter-spacing: 2.7px;
+    cursor: pointer;
 }
 .dlednzevn{
     color: #FFF;
