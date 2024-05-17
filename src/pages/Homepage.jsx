@@ -1,10 +1,13 @@
+import HomePage from "../components/HomePage"
 import HomepageHead from "../components/HomepageHead"
-import "../styles/homepage.css"
+import HomeSlider from "../components/HomeSlider"
+// import "../styles/homepage.css"
+import "../scss/styles.scss"
 
 const Homepage = () => {
   return (
-    <div className="anasayfa-2">
-      <HomepageHead/>
+    <div className="anasayfa-main">
+      <HomeSlider/>
     </div>
   )
 }

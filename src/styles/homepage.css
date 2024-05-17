@@ -1,7 +1,10 @@
+
+
 .anasayfa-2 {
     width: 100vw;
     height: 6275px;
-    overflow-x: hidden; /* Yatay kaydırmayı gizle */
+    overflow-x: hidden;
+    /* Yatay kaydırmayı gizle */
     overflow-y: auto;
     background: #161E29;
 }
@@ -16,7 +19,7 @@
 }
 
 .rectangle-28 {
-    width: 90vw;
+    width: 100vw;
     height: 130.702px;
     background: rgba(22, 30, 41, 0.50);
     flex-shrink: 0;
@@ -53,12 +56,12 @@
 
 
 .ali-choubin-ebaotrc-cnq-4-unsplash-1 {
-    width: 90vw;
+    width: 100vw;
     height: 1030px;
     border-radius: 0px 0px 50px 50px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%), url("../assets/homePhoto.jpeg") lightgray 50% / cover no-repeat;
     flex-shrink: 0;
-    
+
 }
 
 
@@ -181,7 +184,8 @@
     letter-spacing: 2.7px;
     cursor: pointer;
 }
-.dlednzevn{
+
+.dlednzevn {
     color: #FFF;
     font-family: "Playfair Display";
     font-size: 64px;
@@ -189,9 +193,11 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: 12px;
-    margin-top: 14%;
+    margin-top: 19%;
+    margin-left: 200px;
 }
-.vazgeemeyecenzdetayi{
+
+.vazgeemeyecenzdetayi {
     color: #FFF;
     font-family: "Playfair Display";
     font-size: 64px;
@@ -199,4 +205,97 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: 12px;
+}
+
+.frame-22 {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 16.5%;
+}
+
+.frame-14 {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+    float: left;
+}
+
+.arrow-left {
+    width: 42px;
+    height: 42px;
+}
+
+.arrow-right {
+    width: 42px;
+    height: 42px;
+}
+
+.frame-15 {
+    display: flex;
+    width: 1920px;
+    padding: 32px 0px;
+    border-top: 1px solid rgba(255, 255, 255, 0.30);
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+
+.facebook {
+    color: #FFF;
+    font-family: "Avenir Next";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 275;
+    line-height: normal;
+    letter-spacing: 7px;
+    leading-trim: both;
+    text-edge: cap;
+}
+
+.instagram {
+    color: #FFF;
+    font-family: "Avenir Next";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 275;
+    line-height: normal;
+    letter-spacing: 7px;
+    leading-trim: both;
+    text-edge: cap;
+}
+
+.linkedin {
+    color: #FFF;
+    font-family: "Avenir Next";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 275;
+    line-height: normal;
+    letter-spacing: 7px;
+    leading-trim: both;
+    text-edge: cap;
+}
+
+.rn-kataloumuz {
+    transform: rotate(-90deg);
+    color: #FFF;
+    font-family: "Avenir Next";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 275;
+    line-height: normal;
+    letter-spacing: 7px;
+    leading-trim: both;
+    text-edge: cap;
+}
+
+.vector-49 {
+    stroke-width: 1px;
+    stroke: #FFF;
+    width: 22.275px;
+    height: 43.408px;
 }

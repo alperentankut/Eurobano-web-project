@@ -1,0 +1,109 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.slider-container {
+  width: 100vw;
+  height: 970px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.slide {
+  min-width: 100vw;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.fixed-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 3;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.nav-button.prev {
+  left: 10px;
+}
+
+.nav-button.next {
+  right: 10px;
+}
+
+.arrow-left {
+  width: 42px;
+  height: 42px;
+  user-select: none;
+}
+
+.arrow-right {
+  width: 42px;
+  height: 42px;
+  user-select: none;
+}
+
+.frame-22 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.frame-23 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+}
+
+.slider-tax {
+  color: var(--Used-Colors-Text-colors-Text-light, #FFF);
+  font-family: "Avenir Next";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 275;
+  line-height: normal;
+  letter-spacing: 7px;
+  leading-trim: both;
+  text-edge: cap;
+}
+
+.slider-length {
+  color: var(--Used-Colors-Text-colors-Text-light, #FFF);
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "Avenir Next";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 7px;
+}
