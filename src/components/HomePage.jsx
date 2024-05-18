@@ -1,13 +1,14 @@
 /* eslint-disable react/prop-types */
 import "../scss/styles.scss";
 
-const HomePage = ({prev , next , current , length}) => {
+const HomePage = ({ prev, next, current, length }) => {
   return (
     <div>
-      <div className="d-flex align-items-center flex-column container-fluid px-0" style={{ height: "970px" }}>
-        <div className="rectangle-28 d-flex align-items-center justify-content-center"
-         
-        >
+      <div
+        className="d-flex align-items-center flex-column container-fluid px-0"
+        style={{ height: "970px" }}
+      >
+        <div className="rectangle-28 d-flex align-items-center justify-content-center">
           <div className="frame-2">
             <div className="vector-head">
               <svg
@@ -40,8 +41,9 @@ const HomePage = ({prev , next , current , length}) => {
             </div>
           </div>
         </div>
-        <div className="main-container flex-column align-items-center d-flex justify-content-between"
-          style={{height : "100%"}}
+        <div
+          className="main-container flex-column align-items-center d-flex justify-content-between"
+          style={{ height: "100%" }}
         >
           <div className="frame-1 mt-3">
             <div className="anasayfa">Anasayfa</div>
@@ -69,19 +71,65 @@ const HomePage = ({prev , next , current , length}) => {
               </div>
             </div>
           </div>
-
-          <div className="d-flex align-items-center flex-column justify-content-center">
-            <div className="dlednzevn">DÜŞLEDİĞİNİZ EVİN</div>
-            <div className="vazgeemeyecenzdetayi">
-              VAZGEÇEMEYECEĞİNİZ DETAYI
+          <div className="d-flex flex-row align-items-center justify-content-between" style={{height : "30vw"}}>
+            <div className="frame-14" style={{ width: "5vw" }}>
+             
+              <div className="vector-49">
+                {" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="45"
+                  viewBox="0 0 24 45"
+                  fill="none"
+                >
+                  <path
+                    d="M12.2147 44.2041V0.795929M12.2147 0.795929L1.07715 11.9335M12.2147 0.795929L23.3523 11.9335"
+                    stroke="white"
+                  />
+                </svg>
+              </div>
+              <div className="rn-kataloumuz">2024 ürün kataloğumuz</div>
+            </div>
+            <div
+              className="d-flex align-items-center flex-column justify-content-center"
+              style={{ width: "90vw" }}
+            >
+              <div className="dlednzevn">DÜŞLEDİĞİNİZ EVİN</div>
+              <div className="vazgeemeyecenzdetayi">
+                VAZGEÇEMEYECEĞİNİZ DETAYI
+              </div>
+            </div>
+            <div className="frame-13" style={{ width: "5vw" }}>
+              <div className="vector-49">
+                <svg
+                className="vector-49"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="45"
+                  viewBox="0 0 24 45"
+                  fill="none"
+                >
+                  <path
+                    d="M11.785 44.7041V1.29593M11.785 1.29593L0.647461 12.4335M11.785 1.29593L22.9226 12.4335"
+                    stroke="white"
+                  />
+                </svg>
+              </div>
+              <div className="bizimle-iletiime-gein">
+                bizimle iletişime geçin
+              </div>
             </div>
           </div>
 
-          <div className="footer d-flex align-items-center flex-column">
+          <div
+            className="footer d-flex align-items-center flex-column"
+            style={{ gap: "10px" }}
+          >
             <div className="frame-22">
               <div className="arrow-left">
                 <svg
-                onClick={prev}
+                  onClick={prev}
                   className="arrow-left"
                   xmlns="http://www.w3.org/2000/svg"
                   width="43"
@@ -103,7 +151,7 @@ const HomePage = ({prev , next , current , length}) => {
               </div>
               <div className="arrow-right">
                 <svg
-                onClick={next}
+                  onClick={next}
                   xmlns="http://www.w3.org/2000/svg"
                   width="43"
                   height="42"

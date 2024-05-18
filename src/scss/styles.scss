@@ -178,3 +178,59 @@
     leading-trim: both;
     text-edge: cap;
 }
+.frame-14 {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+    height: 50px;
+    /* Width is necessary to ensure the content doesn't wrap */
+    width: auto;
+  }
+  
+  .rn-kataloumuz{
+    transform: rotate(-90deg);
+    color: #FFF;
+    font-family: "Avenir Next";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 275;
+    line-height: normal;
+    letter-spacing: 7px;
+    leading-trim: both;
+    text-edge: cap;
+    white-space: nowrap;
+
+    
+  }
+  
+ .vector-49{
+    stroke-width: 1px;
+    stroke: #FFF;
+    width: 22.275px;
+    height: 43.408px;
+ }
+  
+.frame-13{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+    width: auto;
+
+}
+.bizimle-iletiime-gein{
+    transform: rotate(-90deg);
+    color: #FFF;
+    font-family: "Avenir Next";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 275;
+    line-height: normal;
+    letter-spacing: 7px;
+    leading-trim: both;
+    text-edge: cap;
+    white-space: nowrap
+}
