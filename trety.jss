@@ -1,8 +1,8 @@
+/* eslint-disable react/no-unknown-property */
 /* eslint-disable react/prop-types */
-import "../scss/styles.scss";
 import { useState } from "react";
+import "../scss/styles.scss";
 import Selecter from "./Selecter";
-
 
 const HomePage = ({ prev, next, current, length }) => {
   const [homeVisibility, setHomeVisibility] = useState(false);
@@ -46,6 +46,7 @@ const HomePage = ({ prev, next, current, length }) => {
     setShowroomsVisibility(false);
     setContactVisibility(true);
   };
+
   return (
     <div>
       <div

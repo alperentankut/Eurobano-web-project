@@ -123,7 +123,7 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   justify-content: center;
   align-items: center;
-  gap: 20px; /* Değiştirildi */
+  gap: 120px; /* Değiştirildi */
   flex-wrap: wrap; /* Eklendi */
 }
 
@@ -132,9 +132,9 @@ body {
 .linkedin {
   color: #fff;
   font-family: "Avenir Next";
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 250;
+  font-weight: 200;
   line-height: normal;
   letter-spacing: 7px;
   leading-trim: both;
@@ -223,30 +223,4 @@ body {
   fill: var(--Used-Colors-Text-colors-Text-yellow, #FFCD00);
   height: 1px;
   flex: 1 0 0;
-}
-
-@media (max-width: 768px) {
-  .frame-14,
-  .frame-13 {
-    position: relative;
-    transform: none;
-    left: 0;
-    right: 0;
-    top: 0;
-  }
-
-  .dlednzevn,
-  .vazgeemeyecenzdetayi {
-    font-size: 35px;
-    letter-spacing: 5px;
-  }
-
-  .frame-1,
-  .frame-15 {
-    flex-direction: column;
-  }
-
-  .frame-3 {
-    gap: 5px;
-  }
 }
