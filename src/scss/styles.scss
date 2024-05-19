@@ -42,7 +42,6 @@ body {
 .frame-2 {
   display: inline-flex;
   align-items: flex-start;
-  gap: 3px;
 }
 .vector-head {
   fill: var(--Used-Colors-Text-colors-Text-yellow, #ffcd00);
@@ -54,19 +53,21 @@ body {
   width: 10.77px;
   height: 9.93px;
 }
-.vector-small svg {
+.vector-small {
   position: absolute;
+  right: 39.5%;
+  
 }
 .frame-1 {
   display: inline-flex;
   align-items: center;
-  gap: 30px;
+  gap: 23px;
 }
 
 .anasayfa {
   color: var(--Used-Colors-Text-colors-Text-light, #fff);
   font-family: "Avenir Next";
-  font-size: 18px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
@@ -75,7 +76,7 @@ body {
 .hakkmzda {
   color: var(--Used-Colors-Background-colors-Background-light, #fff);
   font-family: "Avenir Next";
-  font-size: 18px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
@@ -84,7 +85,7 @@ body {
 .rnlerimiz {
   color: var(--Used-Colors-Background-colors-Background-light, #fff);
   font-family: "Avenir Next";
-  font-size: 18px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
@@ -93,7 +94,7 @@ body {
 .fuarlar {
   color: var(--Used-Colors-Background-colors-Background-light, #fff);
   font-family: "Avenir Next";
-  font-size: 18px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
@@ -102,7 +103,7 @@ body {
 .letiim {
   color: var(--Used-Colors-Background-colors-Background-light, #fff);
   font-family: "Avenir Next";
-  font-size: 18px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
@@ -117,7 +118,7 @@ body {
 .tr-tr {
   color: var(--Used-Colors-Text-colors-Text-yellow, #ffcd00);
   font-family: "Avenir Next";
-  font-size: 18px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;

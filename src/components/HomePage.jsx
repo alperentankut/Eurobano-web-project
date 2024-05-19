@@ -10,8 +10,9 @@ const HomePage = ({ prev, next, current, length }) => {
       >
         <div className="rectangle-28 d-flex align-items-center justify-content-center">
           <div className="frame-2">
-            <div className="vector-head">
+            <div>
               <svg
+              className="vector-head"
                 xmlns="http://www.w3.org/2000/svg"
                 width="346"
                 height="39"
@@ -25,8 +26,9 @@ const HomePage = ({ prev, next, current, length }) => {
               </svg>
             </div>
 
-            <div className="vector-small">
+            <div >
               <svg
+              className="vector-small"
                 xmlns="http://www.w3.org/2000/svg"
                 width="12"
                 height="11"
