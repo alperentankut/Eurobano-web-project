@@ -5,7 +5,7 @@ const HomePage = ({ prev, next, current, length }) => {
   return (
     <div>
       <div
-        className="d-flex align-items-center flex-column container-fluid px-0"
+        className="d-flex align-items-center flex-column px-0"
         style={{ height: "970px" }}
       >
         <div className="rectangle-28 d-flex align-items-center justify-content-center">
@@ -73,7 +73,7 @@ const HomePage = ({ prev, next, current, length }) => {
           </div>
           
             <div className="d-flex justify-content-between align-items-center" style={{height : "60%"}}>
-            <div className="frame-14" style={{ width: "8vw" }}>
+            <div className="frame-14" style={{ width: "5vw" }}>
               <div className="rn-kataloumuz">2024 ürün kataloğumuz</div>
               <div className="vector-49">
                 {" "}
@@ -95,14 +95,14 @@ const HomePage = ({ prev, next, current, length }) => {
            
 
             <div className="d-flex align-items-center flex-column justify-content-center"
-              style={{ width: "90vw" }}
+              style={{ width: "80vw" }}
             >
               <div className="dlednzevn">DÜŞLEDİĞİNİZ EVİN</div>
               <div className="vazgeemeyecenzdetayi">
                 VAZGEÇEMEYECEĞİNİZ DETAYI
               </div>
             </div>
-            <div className="frame-13" style={{ width: "8vw" }}>
+            <div className="frame-13" style={{ width: "5vw" }}>
               <div className="bizimle-iletiime-gein">
                 bizimle iletişime geçin
               </div>
