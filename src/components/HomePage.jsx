@@ -71,9 +71,10 @@ const HomePage = ({ prev, next, current, length }) => {
               </div>
             </div>
           </div>
-          <div className="d-flex flex-row align-items-center justify-content-between" style={{height : "30vw"}}>
-            <div className="frame-14" style={{ width: "5vw" }}>
-             
+          
+            <div className="d-flex justify-content-between align-items-center" style={{height : "60%"}}>
+            <div className="frame-14" style={{ width: "8vw" }}>
+              <div className="rn-kataloumuz">2024 ürün kataloğumuz</div>
               <div className="vector-49">
                 {" "}
                 <svg
@@ -89,10 +90,11 @@ const HomePage = ({ prev, next, current, length }) => {
                   />
                 </svg>
               </div>
-              <div className="rn-kataloumuz">2024 ürün kataloğumuz</div>
             </div>
-            <div
-              className="d-flex align-items-center flex-column justify-content-center"
+            
+           
+
+            <div className="d-flex align-items-center flex-column justify-content-center"
               style={{ width: "90vw" }}
             >
               <div className="dlednzevn">DÜŞLEDİĞİNİZ EVİN</div>
@@ -100,10 +102,12 @@ const HomePage = ({ prev, next, current, length }) => {
                 VAZGEÇEMEYECEĞİNİZ DETAYI
               </div>
             </div>
-            <div className="frame-13" style={{ width: "5vw" }}>
+            <div className="frame-13" style={{ width: "8vw" }}>
+              <div className="bizimle-iletiime-gein">
+                bizimle iletişime geçin
+              </div>
               <div className="vector-49">
                 <svg
-                className="vector-49"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="45"
@@ -116,14 +120,10 @@ const HomePage = ({ prev, next, current, length }) => {
                   />
                 </svg>
               </div>
-              <div className="bizimle-iletiime-gein">
-                bizimle iletişime geçin
-              </div>
             </div>
           </div>
 
-          <div
-            className="footer d-flex align-items-center flex-column"
+          <div className="footer d-flex align-items-center flex-column"
             style={{ gap: "10px" }}
           >
             <div className="frame-22">

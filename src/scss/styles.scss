@@ -1,5 +1,17 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+@font-face {
+    font-family: 'Avenir Next';
+    src: url("../public/fonts/AvenirNectLTPro-Regular.otf") format('woff2');
+        //  url('/fonts/AvenirNext-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'Avenir Next', sans-serif;
+  }
+
 .html{
     margin: 0;
     padding: 0;
@@ -180,17 +192,19 @@
 }
 .frame-14 {
     display: inline-flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     gap: 16px;
-    height: 50px;
-    /* Width is necessary to ensure the content doesn't wrap */
-    width: auto;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    position: absolute;
+    left: 0;
+    top: 35%;
   }
   
   .rn-kataloumuz{
-    transform: rotate(-90deg);
+    
     color: #FFF;
     font-family: "Avenir Next";
     font-size: 18px;
@@ -210,19 +224,24 @@
     stroke: #FFF;
     width: 22.275px;
     height: 43.408px;
+    transform: rotate(+90deg);
+
  }
   
 .frame-13{
     display: inline-flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     gap: 16px;
-    width: auto;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    position: absolute;
+    right: 0;
+    top: 35%;
 
 }
 .bizimle-iletiime-gein{
-    transform: rotate(-90deg);
     color: #FFF;
     font-family: "Avenir Next";
     font-size: 18px;
