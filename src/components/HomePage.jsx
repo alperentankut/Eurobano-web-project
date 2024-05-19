@@ -1,7 +1,52 @@
+/* eslint-disable react/no-unknown-property */
 /* eslint-disable react/prop-types */
+import { useState } from "react";
 import "../scss/styles.scss";
+import Selecter from "./Selecter";
 
 const HomePage = ({ prev, next, current, length }) => {
+  const [homeVisibility, setHomeVisibility] = useState(false);
+  const [aboutVisibility, setAboutisibility] = useState(false);
+  const [productsVisibility, setProductsisibility] = useState(false);
+  const [showroomsVisibility, setShowroomsVisibility] = useState(false);
+  const [contactVisibility, setContactVisibility] = useState(false);
+
+  const handleHomeVisibility = () => {
+    setHomeVisibility(true);
+    setAboutisibility(false);
+    setProductsisibility(false);
+    setShowroomsVisibility(false);
+    setContactVisibility(false);
+  };
+  const handleAboutVisibility = () => {
+    setHomeVisibility(false);
+    setAboutisibility(true);
+    setProductsisibility(false);
+    setShowroomsVisibility(false);
+    setContactVisibility(false);
+  };
+  const handleProductsVisibility = () => {
+    setHomeVisibility(false);
+    setAboutisibility(false);
+    setProductsisibility(true);
+    setShowroomsVisibility(false);
+    setContactVisibility(false);
+  };
+  const handleShowroomsVisibility = () => {
+    setHomeVisibility(false);
+    setAboutisibility(false);
+    setProductsisibility(false);
+    setShowroomsVisibility(true);
+    setContactVisibility(false);
+  };
+  const handleContactVisibility = () => {
+    setHomeVisibility(false);
+    setAboutisibility(false);
+    setProductsisibility(false);
+    setShowroomsVisibility(false);
+    setContactVisibility(true);
+  };
+
   return (
     <div>
       <div
@@ -12,7 +57,7 @@ const HomePage = ({ prev, next, current, length }) => {
           <div className="frame-2">
             <div>
               <svg
-              className="vector-head"
+                className="vector-head"
                 xmlns="http://www.w3.org/2000/svg"
                 width="346"
                 height="39"
@@ -26,9 +71,9 @@ const HomePage = ({ prev, next, current, length }) => {
               </svg>
             </div>
 
-            <div >
+            <div>
               <svg
-              className="vector-small"
+                className="vector-small"
                 xmlns="http://www.w3.org/2000/svg"
                 width="12"
                 height="11"
@@ -48,33 +93,73 @@ const HomePage = ({ prev, next, current, length }) => {
           style={{ height: "100%" }}
         >
           <div className="frame-1 mt-3">
-            <div className="anasayfa">Anasayfa</div>
-            <div className="hakkmzda">Hakkımızda</div>
-            <div className="rnlerimiz">Ürünlerimiz</div>
-            <div className="fuarlar">Fuarlar</div>
-            <div className="letiim">İletişim</div>
-            <div className="frame-3">
-              <div className="tr-tr">TR-tr</div>
-              <div className="arrow-down">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M5 8.5L12 15.5L19 8.5"
-                    stroke="#FFCD00"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                  />
-                </svg>
+            <div className="home d-flex align-items-center flex-column ">
+              <a style={{cursor : "pointer"}} onClick={handleHomeVisibility}>
+                {" "}
+                <div className="anasayfa">Anasayfa</div>
+              </a>
+
+              <Selecter visibility={homeVisibility} />
+            </div>
+            <div className="about  d-flex align-items-center flex-column">
+              <a style={{cursor : "pointer"}} onClick={handleAboutVisibility}>
+                <div className="hakkmzda">Hakkımızda</div>
+              </a>
+
+              <Selecter visibility={aboutVisibility} />
+            </div>
+            <div className="products  d-flex align-items-center flex-column">
+              <a style={{cursor : "pointer"}} onClick={handleProductsVisibility}>
+                <div className="rnlerimiz">Ürünlerimiz</div>
+              </a>
+
+              <Selecter visibility={productsVisibility} />
+            </div>
+
+            <div className="showrooms  d-flex align-items-center flex-column">
+              <a style={{cursor : "pointer"}} onClick={handleShowroomsVisibility}>
+                <div className="fuarlar">Fuarlar</div>
+              </a>
+
+              <Selecter visibility={showroomsVisibility} />
+            </div>
+            <div className="contact  d-flex align-items-center flex-column">
+              <a style={{cursor : "pointer"}} onClick={handleContactVisibility}>
+                <div className="letiim">İletişim</div>
+              </a>
+
+              <Selecter visibility={contactVisibility} />
+            </div>
+
+            <div className=" d-flex  align-items-center flex-column">
+              <div className="frame-3">
+                <div className="tr-tr">TR-tr</div>
+                <div className="arrow-down">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M5 8.5L12 15.5L19 8.5"
+                      stroke="#FFCD00"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                </div>
               </div>
+
+              <Selecter />
             </div>
           </div>
-          
-            <div className="d-flex justify-content-between align-items-center" style={{height : "60%"}}>
+
+          <div
+            className="d-flex justify-content-between align-items-center"
+            style={{ height: "60%" }}
+          >
             <div className="frame-14" style={{ width: "5vw" }}>
               <div className="rn-kataloumuz">2024 ürün kataloğumuz</div>
               <div className="vector-49">
@@ -93,10 +178,9 @@ const HomePage = ({ prev, next, current, length }) => {
                 </svg>
               </div>
             </div>
-            
-           
 
-            <div className="d-flex align-items-center flex-column justify-content-center"
+            <div
+              className="d-flex align-items-center flex-column justify-content-center"
               style={{ width: "80vw" }}
             >
               <div className="dlednzevn">DÜŞLEDİĞİNİZ EVİN</div>
@@ -125,7 +209,8 @@ const HomePage = ({ prev, next, current, length }) => {
             </div>
           </div>
 
-          <div className="footer d-flex align-items-center flex-column"
+          <div
+            className="footer d-flex align-items-center flex-column"
             style={{ gap: "10px" }}
           >
             <div className="frame-22">
