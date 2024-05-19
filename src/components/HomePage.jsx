@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import "../scss/styles.scss";
 import { useState } from "react";
-import Selecter from "./Selecter";
+import Selecter from "./Selector";
 
 
 const HomePage = ({ prev, next, current, length }) => {
@@ -95,7 +95,7 @@ const HomePage = ({ prev, next, current, length }) => {
             <div className="home d-flex align-items-center flex-column ">
               <a style={{cursor : "pointer"}} onClick={handleHomeVisibility}>
                 {" "}
-                <div className="anasayfa">Anasayfa</div>
+                <div className="anasayfa-button">Anasayfa</div>
               </a>
 
               <Selecter visibility={homeVisibility} />

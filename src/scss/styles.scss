@@ -12,6 +12,19 @@ body {
   margin: 0;
   padding: 0;
 }
+.anasayfa{
+  width: 100vw;
+  height: 5810px;
+  overflow: hidden;
+  background: var(--Base-Colors-Gray-800, #161E29);
+}
+
+.ali-choubin-ebaotrc-cnq-4-unsplash-1{
+  width: 100vw;
+  height: 1100px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 100%), url(<path-to-image>) lightgray 50% / cover no-repeat;
+  flex-shrink: 0;
+}
 
 .anasayfa-main {
   width: 100vw;
@@ -54,7 +67,8 @@ body {
   flex-wrap: wrap; /* Eklendi */
 }
 
-.anasayfa,
+
+.anasayfa-button,
 .hakkmzda,
 .rnlerimiz,
 .fuarlar,

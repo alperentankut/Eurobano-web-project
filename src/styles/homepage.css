@@ -163,7 +163,7 @@
     cursor: pointer;
 }
 
-.anasayfa {
+.anasayfa-button{
     color: var(--Used-Colors-Text-colors-Text-light, #FFF);
     font-family: "Avenir Next";
     font-size: 18px;
